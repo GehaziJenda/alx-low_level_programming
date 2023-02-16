@@ -12,9 +12,9 @@ int main(void)
 {
 	int integer;
 	char character;
-	long big_integer;
+	long long int big_integer;
 	float floating_integer;
-	int long_integer;
+	long int long_integer;
 
 	printf("Size of a char: %lu byte(s)\n", sizeof(character));
 	printf("Size of an int: %lu byte(s)\n", sizeof(integer));
