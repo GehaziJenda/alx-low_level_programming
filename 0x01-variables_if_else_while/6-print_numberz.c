@@ -8,14 +8,11 @@
 
 int main(void)
 {
-	int i;
-	int letters[10] = {
-		0, 1, 2, 3, 4, 5, 6, 7, 7, 9
-	};
+	char i = '0';
 
-	for (i = 0; i < 10; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(letters[i]);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
