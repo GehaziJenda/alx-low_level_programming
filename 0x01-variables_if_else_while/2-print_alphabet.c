@@ -17,8 +17,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar( letters[i]);
-		putchar('\n');
+		putchar(letters[i]);
 	}
 	return (0);
 }
