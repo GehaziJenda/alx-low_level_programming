@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	char letters[24] = {
 		'a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j',
-		'k', 'l', 'm', 'n', 'o', 'q', 'r', 's', 't',
+		'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't',
 		 'u', 'v', 'w', 'x', 'y', 'z'
 	};
 
