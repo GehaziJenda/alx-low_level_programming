@@ -8,6 +8,8 @@
  */
 int print_sign(int n)
 {
+	int i;
+
 	if (n > 0)
 	{
 		i = 1;
