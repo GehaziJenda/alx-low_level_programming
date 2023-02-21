@@ -6,7 +6,7 @@
  * @c: character to evaluate
  * Return: 1 if success, 0 if not
  */
-int _islower(char c)
+int _islower(int c)
 {
 	int i;
 
