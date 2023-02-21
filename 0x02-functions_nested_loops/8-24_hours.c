@@ -1,7 +1,5 @@
 #include "main.h"
 
-void check_time(int c);
-
 /**
  * jack_bauer - check the code
  *
@@ -9,36 +7,30 @@ void check_time(int c);
  */
 void jack_bauer(void)
 {
-	int hour;
+	int hour1;
 
-	for (hour = 0; hour < 24; hour++)
+	for (hour1 = 0; hour1 < 3; hour1++)
 	{
-		int minute;
+		int hour2;
 
-		for (minute = 0; minute < 60; minute++)
+		for (hour2 = 0; hour2 < 10; hour2++)
 		{
-			check_time(hour);
-			_putchar(':');
-			check_time(minute);
-			_putchar('\n');
-		}
-	}
-}
+			int minute1;
 
-/**
- * check_time - check the code
- * @c: value to be evaluated
- * Return: void.
- */
-void check_time(int c)
-{
-	if (c < 10)
-	{
-		_putchar('0');
-		_putchar(c + '0');
-	}
-	else
-	{
-		_putchar(c + '0');
+			for (minute1 = 0; minute1 < 6; minute1++)
+			{
+				int minute2;
+
+				for (minute2 = 0; minute2 < 10; minute2++)
+				{
+					_putchar(hour1 + '0');
+					_putchar(hour2 + '0');
+					_putchar(':');
+					_putchar(minute1 + '0');
+					_putchar(minute2 + '0');
+					_putchar('\n');
+				}
+			}
+		}
 	}
 }
