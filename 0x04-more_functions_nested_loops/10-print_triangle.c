@@ -14,6 +14,8 @@ void print_triangle(int size)
 		for (i = 1; i <= size; i++)
 		{
 			int k = size - i;
+			int x = size - k;
+			int y;
 
 			if (k > 0)
 			{
@@ -24,9 +26,12 @@ void print_triangle(int size)
 					_putchar(' ');
 				}
 			}
-			_putchar('#');
+			for (y = 0; y < x; y++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 	else
 	{
