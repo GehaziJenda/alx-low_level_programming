@@ -12,7 +12,9 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	int s1Len = 0;
+	int s2Len = 0;
 	char s1Str = ' ';
+	char s2Str = ' ';
 
 	while (s1Str != '\0')
 	{
@@ -22,7 +24,14 @@ int _strcmp(char *s1, char *s2)
 			s1Len++;
 		}
 	}
-
+	while (s2Str != '\0')
+	{
+		s2Str = s2[s2Len];
+		if (s2Str != '\0')
+		{
+			s2Len++;
+		}
+	}
 	while (*s1 != '\0')
 	{
 		i += *s1;
@@ -35,7 +44,7 @@ int _strcmp(char *s1, char *s2)
 			{
 				if (i > j)
 				{
-					result = i - j - s1Len + 1;
+					result = i - j - s2Len;
 				}
 				else
 				{
