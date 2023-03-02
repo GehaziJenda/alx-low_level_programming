@@ -22,7 +22,14 @@ int _strcmp(char *s1, char *s2)
 			s2++;
 			if (i != j)
 			{
-				result = i - j;
+				if (i > j)
+				{
+					result = i - j - 5;
+				}
+				else
+				{
+					result = i - j + 5;
+				}
 				break;
 			}
 		}
