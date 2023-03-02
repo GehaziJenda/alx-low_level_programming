@@ -12,6 +12,8 @@ char *_strncpy(char *dest, char *src, int n)
 	char *result = dest;
 	int i = 1;
 	char srcLast = ' ';
+	char destLast = ' ';
+	int destLen = 0;
 	int j = 1;
 
 	while (srcLast != '\0')
@@ -21,6 +23,11 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			i++;
 		}
+	}
+	while (destLast != '\0')
+	{
+		destLast = dest[destLen];
+		destLen++;
 	}
 	if (i > n)
 	{
@@ -46,7 +53,12 @@ char *_strncpy(char *dest, char *src, int n)
 			dest++;
 			src++;
 		}
+		while (j < destLast - 1)
+		{
+			*dest = '\0';
+			dest++;
+			j++;
+		}
 	}
-	*dest = '\0';
 	return (result);
 }
