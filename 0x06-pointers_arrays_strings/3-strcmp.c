@@ -16,21 +16,18 @@ int _strcmp(char *s1, char *s2)
 	{
 		i += *s1;
 		s1++;
+		while (*s2 != '\0')
+		{
+			j += *s2;
+			s2++;
+			if (i != j)
+			{
+				result = i - j;
+				break;
+			}
+		}
 	}
-	while (*s2 != '\0')
-	{
-		j += *s2;
-		s2++;
-	}
-	if (i > j)
-	{
-		result = 1;
-	}
-	else if (j > i)
-	{
-		result = -1;
-	}
-	else
+	if (i == j)
 	{
 		result = 0;
 	}
