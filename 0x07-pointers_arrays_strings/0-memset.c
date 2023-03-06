@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * _memset - Function to fill n bytes to other
+/**
+ * _memset - Checks
  * @s: to be filled
  * @b: to fill
  * @n: where to stop
@@ -17,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		*(s + i) = b;
 		i++;
 	}
-	return value;
+	return (value);
 }
