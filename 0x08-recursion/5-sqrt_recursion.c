@@ -10,7 +10,7 @@
 int sqrt_recursive(int n, int start, int end)
 {
 	int mid = (start + end) / 2;
-	int sqr = mid * mid;
+	long sqr = mid * mid;
 
 	if (start > end)
 	{
