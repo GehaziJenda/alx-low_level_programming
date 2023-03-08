@@ -5,6 +5,7 @@
  * @n: the number
  * @start: where to start
  * @end: where to end
+ * Return: int
  */
 int sqrt_recursive(int n, int start, int end)
 {
@@ -39,10 +40,6 @@ int _sqrt_recursion(int n)
 	if (n == 0)
 	{
 		return (0);
-	}
-	else if (n < 0)
-	{
-		return (-1);
 	}
 	else
 	{
